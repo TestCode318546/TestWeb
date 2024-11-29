@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>สมัครสมาชิก</title>
+    <title>เข้าสู่ระบบ</title>
     <style>
-        /* พื้นหลัง */
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
@@ -17,8 +16,7 @@
             color: #fff;
         }
 
-        /* กรอบฟอร์ม */
-        .registration-form {
+        .login-form {
             background: #ffffff;
             width: 400px;
             padding: 20px;
@@ -27,7 +25,7 @@
             color: #333;
         }
 
-        .registration-form h2 {
+        .login-form h2 {
             text-align: center;
             margin-bottom: 20px;
             font-size: 24px;
@@ -55,11 +53,6 @@
         .form-group input:focus {
             border-color: #2575fc;
             outline: none;
-        }
-
-        .form-group .error-message {
-            font-size: 12px;
-            color: #e74c3c;
         }
 
         .submit-btn {
@@ -96,29 +89,23 @@
     </style>
 </head>
 <body>
-    <div class="registration-form">
-        <h2>สมัครสมาชิก</h2>
+    <div class="login-form">
+        <h2>เข้าสู่ระบบ</h2>
         <form>
-            <div class="form-group">
-                <label for="username">ชื่อผู้ใช้</label>
-                <input type="text" id="username" placeholder="กรอกชื่อผู้ใช้">
-                <span class="error-message" id="username-error"></span>
-            </div>
             <div class="form-group">
                 <label for="email">อีเมล</label>
                 <input type="email" id="email" placeholder="กรอกอีเมล">
-                <span class="error-message" id="email-error"></span>
             </div>
             <div class="form-group">
                 <label for="password">รหัสผ่าน</label>
                 <input type="password" id="password" placeholder="กรอกรหัสผ่าน">
-                <span class="error-message" id="password-error"></span>
             </div>
-            <button type="submit" class="submit-btn">สมัครสมาชิก</button>
-            <div class="text-center">
-                มีบัญชีอยู่แล้ว? <a href="#">เข้าสู่ระบบ</a>
-            </div>
+            <!-- ใช้ JavaScript สำหรับเปลี่ยนหน้า -->
+            <button type="button" class="submit-btn" onclick="window.location.href='Register.html';">เข้าสู่ระบบ</button>
         </form>
+        <div class="text-center">
+            ยังไม่มีบัญชี? <a href="Register.html">สมัครสมาชิก</a>
+        </div>
     </div>
 </body>
 </html>
